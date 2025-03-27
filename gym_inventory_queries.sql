@@ -1,7 +1,8 @@
+create database gym_inventory;
 use gym_inventory;
 CREATE TABLE products (
     id INT PRIMARY KEY AUTO_INCREMENT,
-	category ENUM('protein','vitamins','creatine','pre-workouts','post_workouts'),
+	category  VARCHAR(50) NOT NULL,
     name VARCHAR(255) NOT NULL,
     purchase_price DECIMAL(10,2) NOT NULL, 
     selling_price DECIMAL(10,2) NOT NULL,
@@ -171,4 +172,3 @@ SET selling_price = selling_price * 1.05;
 	#Reset Stock for All Products to 0
 UPDATE products 
 SET stock_quantity = 0;
-

@@ -267,6 +267,12 @@ body {
 				</table>
 			</div>
 		</div>
+		<div class="container">
+	        <div class="card"><a href="products.jsp">Manage Products</a></div>
+	        <div class="card"><a href="purchases.jsp">Manage Purchases</a></div>
+	        <div class="card"><a href="sales.jsp">Manage Sales</a></div>
+	        <div class="card"><a href="reports.jsp">View Reports</a></div>
+	    </div>
 	</div>
 
 
